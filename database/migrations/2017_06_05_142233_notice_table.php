@@ -13,7 +13,14 @@ class NoticeTable extends Migration
      */
     public function up()
     {
-        //
+       Schema::create('notices', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('date');
+            $table->string('title');
+            $table->string('discription');
+            $table->string('status');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +30,6 @@ class NoticeTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('notices');
     }
 }

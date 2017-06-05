@@ -22,6 +22,8 @@ class UserWalletTable extends Migration
             $table->string('bank_brance');
             $table->string('bkash_number');
             $table->string('rocket_number');
+            $table->string('mkash');
+            $table->string('ucash');
             $table->string('status')->comment('1=active 2=pending');
             $table->timestamps();
         });

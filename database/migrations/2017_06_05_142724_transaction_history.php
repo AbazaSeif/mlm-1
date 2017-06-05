@@ -13,7 +13,20 @@ class TransactionHistory extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('transaction_history', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('user_id');
+            $table->string('wallet_id');
+            $table->string('wallet_number');
+            $table->string('date');
+            $table->string('type');
+            $table->string('title');
+            $table->string('gross');
+            $table->string('fee');
+            $table->string('net');
+            $table->string('status');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +36,6 @@ class TransactionHistory extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('transaction_history');
     }
 }

@@ -13,7 +13,12 @@ class UserSavingAccount extends Migration
      */
     public function up()
     {
-        //
+          Schema::create('user_saving_accounts', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('user_id');
+            $table->string('balance');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ class UserSavingAccount extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('user_saving_accounts');
     }
 }

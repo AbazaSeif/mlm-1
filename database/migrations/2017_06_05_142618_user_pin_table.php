@@ -13,7 +13,15 @@ class UserPinTable extends Migration
      */
     public function up()
     {
-        //
+         Schema::create('user_pin', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('user_id');
+            $table->string('pin_number');
+            $table->string('favorite_color');
+            $table->string('birth_place');
+            $table->string('status');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +31,6 @@ class UserPinTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('user_pin');
     }
 }

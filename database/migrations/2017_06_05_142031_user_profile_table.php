@@ -13,7 +13,23 @@ class UserProfileTable extends Migration
      */
     public function up()
     {
-        //
+       Schema::create('user_profiles', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('user_id');
+            $table->string('father_name');
+            $table->string('mother_name');
+            $table->string('date_of_birth');
+            $table->string('nid_no');
+            $table->string('religion');
+            $table->string('sex');
+            $table->string('spouse_name');
+            $table->string('contact_number');
+            $table->string('mobile_number');
+            $table->string('nominee');
+            $table->string('nominee_relation');
+            
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +39,6 @@ class UserProfileTable extends Migration
      */
     public function down()
     {
-        //
+       Schema::dropIfExists('user_profiles');
     }
 }
