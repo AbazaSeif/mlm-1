@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('admin', function () {
     return view('backend.body');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
