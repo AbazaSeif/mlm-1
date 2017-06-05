@@ -300,7 +300,7 @@
                                         <ul class="conversation-list nicescroll">
                                             <li class="clearfix">
                                                 <div class="chat-avatar">
-                                                    <img src="assets/images/avatar-1.jpg" alt="male">
+                                                    <img src="{{url('public')}}/assets/images/avatar-1.jpg" alt="male">
                                                     <i>10:00</i>
                                                 </div>
                                                 <div class="conversation-text">
@@ -314,7 +314,7 @@
                                             </li>
                                             <li class="clearfix odd">
                                                 <div class="chat-avatar">
-                                                    <img src="assets/images/users/avatar-5.jpg" alt="Female">
+                                                    <img src="{{url('public')}}/assets/images/users/avatar-5.jpg" alt="Female">
                                                     <i>10:01</i>
                                                 </div>
                                                 <div class="conversation-text">
@@ -328,7 +328,7 @@
                                             </li>
                                             <li class="clearfix">
                                                 <div class="chat-avatar">
-                                                    <img src="assets/images/avatar-1.jpg" alt="male">
+                                                    <img src="{{url('public')}}/assets/images/avatar-1.jpg" alt="male">
                                                     <i>10:01</i>
                                                 </div>
                                                 <div class="conversation-text">
@@ -342,7 +342,7 @@
                                             </li>
                                             <li class="clearfix odd">
                                                 <div class="chat-avatar">
-                                                    <img src="assets/images/users/avatar-5.jpg" alt="male">
+                                                    <img src="{{url('public')}}/assets/images/users/avatar-5.jpg" alt="male">
                                                     <i>10:02</i>
                                                 </div>
                                                 <div class="conversation-text">
