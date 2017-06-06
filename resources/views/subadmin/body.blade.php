@@ -17,7 +17,7 @@
                                 </div>
 
                                 <h4 class="page-title">Dashboard</h4>
-                                <p class="text-muted page-title-alt">Welcome to Ubold admin panel !</p>
+                                <p class="text-muted page-title-alt">{{Auth::guard('admin')->user()->name}} Welcome to  admin panel !</p>
                             </div>
                         </div>
 
